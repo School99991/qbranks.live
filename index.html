@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Ranker Live - Quizbowl Map</title>
+  <title>QBRanks.live</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
@@ -866,9 +866,9 @@ async function loadData() {
   }
   
   if (missingTeams.length > 0) {
-    statsHTML += `<br><br>⚠️ <strong>${missingTeams.length} teams missing</strong><br>`;
+    statsHTML += `<br><br> <strong>${missingTeams.length} teams missing</strong><br>`;
     statsHTML += `<small>First few: ${missingTeams.slice(0, 3).join(', ')}</small>`;
-    console.log(`⚠️ ${missingTeams.length} teams in Location Data not found in Overall sheet:`);
+    console.log(` ${missingTeams.length} teams in Location Data not found in Overall sheet:`);
     console.log(missingTeams);
   }
   
